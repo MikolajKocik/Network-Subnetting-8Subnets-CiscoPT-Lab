@@ -37,7 +37,15 @@ Poniższa tabela przedstawia kluczowe zakresy adresów dla każdej z 8 wyznaczon
 
 Poniższy zrzut ekranu przedstawia zaimplementowaną topologię sieci w programie Cisco Packet Tracer, odzwierciedlającą podział na 8 podsieci. Router pełni rolę centralnego punktu routingowego, łączącego wszystkie podsieci.
 
-![Topologia Laba Subnetting 8 Podsieci](images/topologia_subnetting.png)
+![Topologia Laba Subnetting 8 Podsieci](images/topology-cisco-exStar-img.PNG)
+
+Bazując na topologii sieci rozszerzonej gwiazdy, gdzie każde z urządzeń końcowych działa jako urządzenie centralne dla własnej topologii gwiazdy. Pojedyncze gwiazdy połączone są przy użyciu koncentratorów lub przełączników.
+
+![Topologia rozszerzonej gwiazdy](images/topology-extended-star.jpeg)
+
+```
+https://pl.wikipedia.org/wiki/Topologia_sieci_komputerowej#
+```
 
 **Implementacja i Konfiguracja:**
 
@@ -54,6 +62,10 @@ W praktyce administracji sieciami często unika się przypisywania pierwszym kil
 * Adresy **sieci** (np. 140.55.0.0) i **rozgłoszeniowe** (broadcast, np. 140.55.31.255) są z definicji **nieużyteczne** dla hostów.
 
 Rozpoczęcie przypisywania adresów IP stacjom roboczym od **.3, .4** lub nawet wyższego numeru jest zatem **dobrą praktyką administracyjną**. Zapewnia to, że krytyczne usługi sieciowe (bramka, potencjalne serwery) mają swoje zarezerwowane, niskie adresy, a adresy stacji roboczych zaczynają się nieco dalej w puli użytecznych adresów. Ułatwia to planowanie i zarządzanie adresacją w sieci.
+
+Przykładowe przypisanie statycznego adres IP dla PC (PC15)
+
+![Przypisanie ip](images/pc15-static_address.PNG)
 
 **Weryfikacja Działania:**
 
