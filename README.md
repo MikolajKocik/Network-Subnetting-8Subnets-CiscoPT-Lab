@@ -39,8 +39,6 @@ Poniższy zrzut ekranu przedstawia zaimplementowaną topologię sieci w programi
 
 ![Topologia Laba Subnetting 8 Podsieci](images/topologia_subnetting.png)
 
-*(Pamiętaj, aby nazwać plik ze screenem `topologia_subnetting.png` i umieścić go w folderze `images/` w repozytorium)*
-
 **Implementacja i Konfiguracja:**
 
 Konfiguracja laba polegała na ustawieniu adresacji IP na interfejsach routera oraz na komputerach w każdej z podsieci, zgodnie z wynikami obliczeń. Router, jako punkt styku każdej podsieci, został skonfigurowany z pierwszym użytecznym adresem IP (np. 140.55.0.1 dla Podsieci 1, 140.55.32.1 dla Podsieci 2 itd.) oraz odpowiednią maską podsieci 255.255.224.0.
